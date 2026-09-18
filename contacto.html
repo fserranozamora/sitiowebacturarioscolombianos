@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Actuarios Colombianos S.A.S.</title>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <!-- Google reCAPTCHA v2 -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <link rel="shortcut icon" href="img/icono_logo.png">
+    <link rel="stylesheet" href="css/estilos_contacto.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container__header">	
+            <div class="logo"> 
+                <a href="index.html"><img src="img/logo.png" alt="Actuarios Colombianos Logo"></a>
+            </div>
+
+            <!-- Botón Hamburguesa Animado -->
+            <button type="button" class="btn__hamburger" id="icon_menu" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menú Desplegable Lateral -->
+            <div class="menu" id="nav_menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="contacto.html" class="active">Contacto</a></li>
+                        <li><a href="consultoria.html" class="btn-highlight">CONSULTORIA ACTUARIAL</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cover">
+            <div class="text__information-cover">
+                <h1>CONTACTO</h1>
+            </div>
+        </section>
+
+        <section class="container__banner__1">
+            <div class="banner__1">
+                <div class="banner__text__1">
+                    <div class="media__banner">
+                        <img src="img/contacto.jpg" alt="Cobertura Actuarios Colombianos">
+                    </div>
+                    <h2>Realizamos trabajos en Centroamérica y toda Sudamérica</h2>
+                    <p>Puede escribirnos directamente a: <a href="mailto:info@actuaria.com.co" class="email-link">info@actuaria.com.co</a> o utilizar el siguiente formulario de contacto.</p>
+                </div>
+
+                <div class="form-container">
+                    <h3>Escríbenos</h3>
+                    
+                    <!-- Mensaje de estado dinámico -->
+                    <div id="status-message" style="display: none; padding: 12px; margin-bottom: 20px; border-radius: 8px; font-weight: 600; text-align: center;"></div>
+
+                    <form method="post" action="php/contacto.php" class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre_empresa">Nombre de la empresa <span class="required">*</span></label>
+                            <input type="text" id="nombre_empresa" name="nombre_empresa" placeholder="Nombre de la empresa" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nombre_contacto">Nombre y apellido de contacto <span class="required">*</span></label>
+                            <input type="text" id="nombre_contacto" name="nombre_contacto" placeholder="Nombre completo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cargo">Cargo</label>
+                            <input type="text" id="cargo" name="cargo" placeholder="Cargo en la empresa">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pais">País</label>
+                            <input type="text" id="pais" name="pais" placeholder="País de residencia">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Código País + Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +57 300 000 0000">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje <span class="required">*</span></label>
+                            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escriba su mensaje aquí..." required></textarea>
+                        </div>
+
+                        <!-- Widget reCAPTCHA (Reemplazar data-sitekey con tu clave pública) -->
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="TU_CLAVE_DE_SITIO_RECAPTCHA"></div>
+                        </div>
+
+                        <p class="legend-required"><span class="required">*</span> Datos obligatorios</p>
+
+                        <button id="submit" name="submit" type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div class="linea"></div>
+
+        <section class="container__banner__2">
+            <div class="banner__2">
+                <div class="location-card">
+                    <div class="flag-icon">
+                        <img src="img/COLOMBIA1.png" alt="Colombia">
+                    </div>
+                    <div class="location-details">
+                        <p><img src="img/icono_direccion.png" width="20" height="20" alt="Dirección"> <strong>Dirección:</strong> Calle 106 # 19a-42 Apto 305, Bogotá, Colombia.</p>
+                        <p><img src="img/icono_telefono.png" width="20" height="20" alt="Teléfono"> <strong>Teléfono:</strong> (57) 3003074467</p>
+                    </div>
+                </div>
+
+                <div class="location-card">
+                    <div class="flag-icon">
+                        <img src="img/PANAMA1.png" alt="Panamá">
+                    </div>
+                    <div class="location-details">
+                        <p>Atención y servicios actuariales para Panamá y la región Centroamericana.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container__banner__3">
+            <div class="banner__3">
+                <div class="banner__text__3">
+                    <h5>¡Solicita una consulta a nuestros especialistas!</h5>
+                </div>
+                <div class="buttons__cover">
+                    <a href="consultoria.html" class="btn btn-primary">SOLICITAR AHORA</a>
+                </div>	
+            </div>
+        </section>
+
+        <section class="container__banner__4">
+            <div class="banner__4">
+                <div class="logo_2">
+                    <img src="img/logo.png" alt="Actuarios Colombianos Logo">
+                </div>
+                <div class="banner__text__4">
+                    <p>Actuarios Colombianos S.A.S. Es una compañía de SERVICIOS ACTUARIALES creada en el 2017 con una amplia experiencia en consultoría y estudios actuariales.</p>
+                </div>
+                <div class="banner__text__4 contact-info">
+                    <h3>Contactos</h3>
+                    <p>DIRECCIÓN: Calle 106 # 19a – 42 Apto 305</p>
+                    <p>Bogotá D.C. - Colombia</p>
+                    <p>Celular: (57) 3003074467</p>
+                </div>
+                <div class="menu__2">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="nosotros.html">Nosotros</a></li>
+                            <li><a href="servicios.html">Servicios</a></li>
+                            <li><a href="contacto.html">Contacto</a></li>
+                            <li><a href="consultoria.html">Consultoría actuarial</a></li> 
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; <span id="year"></span> actuaria.com.co | Powered and designed by Laboratorios Serrano S.A.S.</p>
+    </footer>
+
+    <div class="menu-overlay" id="menu_overlay"></div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Lógica para mostrar la alerta según la respuesta de PHP
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const status = urlParams.get('status');
+            const messageDiv = document.getElementById('status-message');
+
+            if (status) {
+                messageDiv.style.display = 'block';
+                if (status === 'success') {
+                    messageDiv.style.backgroundColor = '#d4edda';
+                    messageDiv.style.color = '#155724';
+                    messageDiv.textContent = '¡El mensaje se ha enviado con éxito!';
+                } else if (status === 'captcha_error') {
+                    messageDiv.style.backgroundColor = '#f8d7da';
+                    messageDiv.style.color = '#721c24';
+                    messageDiv.textContent = 'Por favor, confirma el reCAPTCHA antes de enviar.';
+                } else if (status === 'invalid_fields') {
+                    messageDiv.style.backgroundColor = '#fff3cd';
+                    messageDiv.style.color = '#856404';
+                    messageDiv.textContent = 'Por favor, completa todos los campos requeridos.';
+                } else if (status === 'mail_error') {
+                    messageDiv.style.backgroundColor = '#f8d7da';
+                    messageDiv.style.color = '#721c24';
+                    messageDiv.textContent = 'Hubo un error al enviar el correo. Intenta nuevamente.';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
