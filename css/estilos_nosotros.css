@@ -387,7 +387,7 @@ footer {
     }
 
     .cover {
-        background-attachment: scroll;
+        background-attachment: flex;
     }
 
     .banner__2 {
