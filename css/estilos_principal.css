@@ -442,7 +442,7 @@ footer {
     }
 
     .cover {
-        background-attachment: scroll;
+        background-attachment: flex;
         text-align: center;
         padding: 50px 20px;
     }
